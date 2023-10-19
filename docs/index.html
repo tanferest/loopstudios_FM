@@ -19,20 +19,20 @@
       <header class="header">
           <div class="header__topnav">
               <img class="header__logo" src="./assets/images/logo.svg" alt="Loopstudios Logo">
-              <img class="header__burger" src="./assets/images/icon-hamburger.svg" alt="Menu icon">
+              <img class="header__burger js-burger" src="./assets/images/icon-hamburger.svg" alt="Menu icon">
           </div>
-          <div class="menu hidden">
+          <div class="menu js-menu hidden">
               <div class="menu__top">
                   <img class="header__logo" src="./assets/images/logo.svg" alt="Loopstudios Logo">
-                  <img class="header__burger" src="./assets/images/icon-close.svg" alt="Close icon">
+                  <img class="js-close" src="./assets/images/icon-close.svg" alt="Close icon">
               </div>
               <nav class="menu__nav">
                   <ul class="menu__list">
-                      <li class="menu__item"><a href="">About</a></li>
-                      <li class="menu__item"><a href=""></a>Careers</li>
-                      <li class="menu__item"><a href=""></a>Events</li>
-                      <li class="menu__item"><a href=""></a>Products</li>
-                      <li class="menu__item"><a href=""></a>Support</li>
+                      <li class="menu__item"><a class="js-link" href="#about">About</a></li>
+                      <li class="menu__item"><a class="js-link" href="">Careers</a></li>
+                      <li class="menu__item"><a class="js-link" href="">Events</a></li>
+                      <li class="menu__item"><a class="js-link" href="#products">Products</a></li>
+                      <li class="menu__item"><a class="js-link" href="#support">Support</a></li>
                   </ul>
               </nav>
           </div>
@@ -41,14 +41,14 @@
 
       <main>
           <section class="section about">
-              <img class="about__img" src="./assets/images/mobile/image-interactive.jpg" alt="">
+              <img class="about__img" id="about" src="./assets/images/mobile/image-interactive.jpg" alt="">
               <h2 class="section__title">
                   The leader in interactive vr
               </h2>
               <p class="about__text">Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.</p>
           </section>
           <section class="section creations">
-              <h2 class="section__title">Our creations</h2>
+              <h2 class="section__title" id="products">Our creations</h2>
               <ul class="creations__list">
                   <li class="creations__item">
                       <div class="img-container">
@@ -114,7 +114,7 @@
       <footer class="footer">
           <img class="footer__logo" src="./assets/images/logo.svg" alt="Loopstudios Logo">
           <nav class="footer__nav">
-              <ul class="footer__navlist">
+              <ul class="footer__navlist" id="support">
                   <li class="footer__li"><a href="https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw/hub" class="footer__nav--link" target="_blank">About</a></li>
                   <li class="footer__li"><a href="https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw/hub" class="footer__nav--link" target="_blank">Careers</a></li>
                   <li class="footer__li"><a href="https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw/hub" class="footer__nav--link" target="_blank">Events</a></li>

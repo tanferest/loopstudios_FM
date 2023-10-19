@@ -1,1 +1,1 @@
-"use strict";console.log(">> Ready :)");
+"use strict";const burger=document.querySelector(".js-burger"),closeIcon=document.querySelector(".js-close"),menu=document.querySelector(".js-menu");function handleClick(){menu.classList.toggle("hidden")}function handleLink(){menu.classList.add("hidden")}function menuLinks(){const e=document.querySelectorAll(".js-link");for(const n of e)n.addEventListener("click",handleLink)}burger.addEventListener("click",handleClick),closeIcon.addEventListener("click",handleClick),menuLinks();
