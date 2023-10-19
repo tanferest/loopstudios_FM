@@ -26,6 +26,7 @@
 }
 
 .creations {
+    margin-bottom: 90px;
     &__list {
         margin-top: 40px;
     }
@@ -39,10 +40,10 @@
     &__text {
         position: absolute;
         bottom: 22px;
-        left: 18px;
+        left: 19px;
         text-transform: uppercase;
         font-family: 'Josefin Sans', sans-serif;
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         max-width: 9ch;
         color: rgba(255, 255, 255, 0.9);
     }
@@ -51,6 +52,17 @@
         width: 100%;
         height: 100%;
         background: linear-gradient(-.25turn, rgba(0, 0, 0, 0), 60%, rgba(0, 0, 0, 0.65));
+    }
+    &__btn {
+        position: relative;
+        margin-top: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 165px;
+        height: 45px;
+        border: 1px solid $black;
+        text-transform: uppercase;
+        letter-spacing: 4px;
     }
 }
 

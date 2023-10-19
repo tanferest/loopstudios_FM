@@ -1,3 +1,35 @@
 .footer {
-    height: 80vh;
+    min-height: 80vh;
+    background-color: $black;
+    padding: 18% 6% 10% 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__logo {
+        width: 50%;
+        margin-bottom: 25px;
+    }
+    &__nav {
+        margin-bottom: 20px;
+        text-align: center;
+        &--link {
+            color: $white;
+        } 
+    }
+    &__li {
+        margin-top: 20px;
+    }
+    &__social {
+        margin: 50px 0 20px 0;
+        &--list {
+            display: flex;
+            align-items: center;
+        }
+        &--item {
+            margin: 0 8px;
+        }
+    }
+    &__text {
+        color: $dark-gray;
+    }
 }
