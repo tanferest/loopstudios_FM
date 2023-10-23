@@ -108,6 +108,7 @@
     }
     @include desktop {
         position: relative;
+        margin-bottom: 160px;
         &__title {
             margin-left: 6%;
         }

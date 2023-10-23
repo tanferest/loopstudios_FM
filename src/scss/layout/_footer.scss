@@ -7,28 +7,96 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @include desktop {
+        min-height: fit-content;
+        bottom: 0;
+        padding: 44px 11%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &__div1 {
+        @include desktop {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
     &__logo {
-        width: 40%;
+        width: 100%;
         margin-bottom: 25px;
+        @include desktop {
+            width: 35%;
+            margin-bottom: 10px;
+        }
     }
     &__nav {
         margin-bottom: 20px;
         text-align: center;
+        @include desktop {
+            margin-bottom: 0;
+        }
         &--link {
             color: $white;
-        } 
+            position: relative;
+            &:hover {
+                &::after {
+                  content: '';
+                  position: absolute;
+                  width: 45%;
+                  height: 1px;
+                  bottom: -10px;
+                  left: 25%;
+                  border-bottom: 2px solid $white;
+                }
+              }
+        }
+    }
+    &__navlist {
+        display: flex;
     }
     &__li {
         margin-top: 20px;
+        @include desktop {
+            margin-top: 18px;
+            margin-right: 33px;
+        }
+    }
+    &__div2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @include desktop {
+            align-items: flex-end;
+            position: relative;
+            left: 6px;
+        }
     }
     &__social {
         margin: 50px 0 20px 0;
+        @include desktop {
+            margin: 0 0 23px 0;
+        }
         &--list {
             display: flex;
             align-items: center;
         }
         &--item {
             margin: 0 8px;
+            @include desktop {
+                position: relative;
+                &:hover {
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: 90%;
+                        height: 1px;
+                        bottom: -4px;
+                        left: 5%;
+                        border-bottom: 2px solid $white;
+                      }
+                }
+            }
         }
     }
     &__text {
