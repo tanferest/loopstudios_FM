@@ -1,105 +1,121 @@
 .header {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    color: $white;
-    background: url(../images/mobile/image-hero.jpg) center / cover;
-    padding: 0 6%;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  color: $white;
+  background: url(../images/mobile/image-hero.jpg) center / cover;
+  padding: 0 6%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__topnav {
+    position: absolute;
+    top: 30px;
+    width: 88%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    &__topnav {
-        position: absolute;
-        top: 30px;
-        width: 88%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 40px;
+    height: 40px;
+  }
+  &__logo {
+    width: 150px;
+  }
+  &__burger {
+    width: 23px;
+    height: 18px;
+    position: relative;
+  }
+  &__title {
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+    border: 2px solid $white;
+    padding: 20px;
+    font-size: 2.8rem;
+  }
+  &__menu {
+    &--list {
+      display: none;
+    }
+  }
+  @include desktop {
+    height: 85vh;
+    &__burger {
+      display: none;
     }
     &__logo {
-        width: 150px;
+      width: 190px;
     }
-    &__burger {
-        width: 23px;
-        height: 18px;
-        position: relative;
+    &__topnav {
+      top: 60px;
+      width: 78%;
     }
     &__title {
-        text-transform: uppercase;
-        font-family: 'Josefin Sans', sans-serif;
-        border: 2px solid $white;
-        padding: 20px;
-        font-size: 2.8rem;
+      width: 15ch;
+      font-size: 4.7rem;
+      padding: 38px 34px 25px;
+      position: absolute;
+      left: 158px;
+      top: 226px;
+      letter-spacing: 1px;
     }
     &__menu {
-        &--list {
-            display: none;
-        }
+      &--list {
+        display: flex;
+        width: 26.4vw;
+        justify-content: space-between;
+      }
     }
-    @include tablet {
-        height: 72vh;
-        &__burger {
-            display: none;
+  }
+}
+
+.header__menu--item {
+  @include desktop {
+    position: relative;
+    & a {
+      color: $white;
+      &:hover {
+        &::after {
+          content: '';
+          position: absolute;
+          width: 45%;
+          height: 1px;
+          bottom: -10px;
+          left: 25%;
+          border-bottom: 2px solid $white;
         }
-        &__logo {
-            width: 190px;
-        }
-        &__topnav {
-            top: 60px;
-            width: 77%;
-        }
-        &__title {
-            width: 15ch;
-            font-size: 4.7rem;
-            padding: 40px 40px 25px;
-            position: absolute;
-            left: 163px;
-            top: 226px;
-            letter-spacing: 1px;
-        }
-        &__menu {
-            &--list {
-                display: flex;
-                width: 26.4vw;
-                justify-content: space-between;
-            }
-            &--item a {
-                color: $white;
-            }
-        }
+      }
     }
+  }
 }
 
 .mobile {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    padding: 0 6%;
-    background-color: $black;
-    z-index: 100;
-    &__top {
-        position: absolute;
-        top: 30px;
-        width: 88%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 40px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 0 6%;
+  background-color: $black;
+  z-index: 100;
+  &__top {
+    position: absolute;
+    top: 30px;
+    width: 88%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+  }
+  &__nav {
+    position: absolute;
+    top: 30%;
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.6rem;
+  }
+  &__item {
+    margin-top: 25px;
+    & a {
+      color: $white;
     }
-    &__nav {
-        position: absolute;
-        top: 30%;
-        text-transform: uppercase;
-        font-family: 'Josefin Sans', sans-serif;
-        font-size: 1.6rem;
-    }
-    &__item {
-        margin-top: 25px;
-        & a {
-            color: $white;
-        }
-    }
+  }
 }
-

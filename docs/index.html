@@ -20,19 +20,28 @@
           <div class="header__topnav">
               <img class="header__logo" src="./assets/images/logo.svg" alt="Loopstudios Logo">
               <img class="header__burger js-burger" src="./assets/images/icon-hamburger.svg" alt="Menu icon">
+              <nav class="header__menu">
+                  <ul class="header__menu--list">
+                      <li class="header__menu--item"><a href="#about">About</a></li>
+                      <li class="header__menu--item"><a href="">Careers</a></li>
+                      <li class="header__menu--item"><a href="">Events</a></li>
+                      <li class="header__menu--item"><a href="#products">Products</a></li>
+                      <li class="header__menu--item"><a href="#support">Support</a></li>
+                  </ul>
+              </nav>
           </div>
-          <div class="menu js-menu hidden">
-              <div class="menu__top">
+          <div class="mobile js-menu hidden">
+              <div class="mobile__top">
                   <img class="header__logo" src="./assets/images/logo.svg" alt="Loopstudios Logo">
                   <img class="js-close" src="./assets/images/icon-close.svg" alt="Close icon">
               </div>
-              <nav class="menu__nav">
-                  <ul class="menu__list">
-                      <li class="menu__item"><a class="js-link" href="#about">About</a></li>
-                      <li class="menu__item"><a class="js-link" href="">Careers</a></li>
-                      <li class="menu__item"><a class="js-link" href="">Events</a></li>
-                      <li class="menu__item"><a class="js-link" href="#products">Products</a></li>
-                      <li class="menu__item"><a class="js-link" href="#support">Support</a></li>
+              <nav class="mobile__nav">
+                  <ul class="mobile__list">
+                      <li class="mobile__item"><a class="js-link" href="#about">About</a></li>
+                      <li class="mobile__item"><a class="js-link" href="">Careers</a></li>
+                      <li class="mobile__item"><a class="js-link" href="">Events</a></li>
+                      <li class="mobile__item"><a class="js-link" href="#products">Products</a></li>
+                      <li class="mobile__item"><a class="js-link" href="#support">Support</a></li>
                   </ul>
               </nav>
           </div>
@@ -40,19 +49,23 @@
       </header>
 
       <main>
-          <section class="section about">
-              <img class="about__img" id="about" src="./assets/images/mobile/image-interactive.jpg" alt="">
-              <h2 class="section__title">
-                  The leader in interactive vr
-              </h2>
-              <p class="about__text">Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.</p>
+          <section class="section about" id="about">
+              <img class="about__img" src="./assets/images/mobile/image-interactive.jpg" alt="">
+              <img class="about__img2" src="./assets/images/desktop/image-interactive.jpg" alt="">
+              <div class="about__container">
+                  <h2 class="section__title about__title">
+                      The leader in interactive vr
+                  </h2>
+                  <p class="about__text">Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.</p>
+              </div>
           </section>
           <section class="section creations">
-              <h2 class="section__title" id="products">Our creations</h2>
+              <h2 class="section__title creations__title" id="products">Our creations</h2>
               <ul class="creations__list">
                   <li class="creations__item">
                       <div class="img-container">
                           <img class="creations__img" src="./assets/images/mobile/image-deep-earth.jpg" alt="The Planet Earth seen from the space">
+                          <img class="creations__img2" src="./assets/images/desktop/image-deep-earth.jpg" alt="The Planet Earth seen from the space">
                           <div class="creations__gradient"></div>
                       </div>
                       <p class="creations__text">Deep earth</p>
@@ -60,6 +73,7 @@
                   <li class="creations__item">
                       <div class="img-container">
                           <img class="creations__img" src="./assets/images/mobile/image-night-arcade.jpg" alt="Arcade lighted games">
+                          <img class="creations__img2" src="./assets/images/desktop/image-night-arcade.jpg" alt="Arcade lighted games">
                           <div class="creations__gradient"></div>
                       </div>
                       <p class="creations__text">Night arcade</p>
@@ -67,6 +81,7 @@
                   <li class="creations__item">
                       <div class="img-container">
                           <img class="creations__img" src="./assets/images/mobile/image-soccer-team.jpg" alt="Soccer player wearing a red shirt">
+                          <img class="creations__img2" src="./assets/images/desktop/image-soccer-team.jpg" alt="Soccer player wearing a red shirt">
                           <div class="creations__gradient"></div>
                       </div>
                       <p class="creations__text">Soccer team vr</p>
@@ -74,6 +89,7 @@
                   <li class="creations__item">
                       <div class="img-container">
                           <img class="creations__img" src="./assets/images/mobile/image-grid.jpg" alt="Close-up of the front down part of a car">
+                          <img class="creations__img2" src="./assets/images/desktop/image-grid.jpg" alt="Close-up of the front down part of a car">
                           <div class="creations__gradient"></div>
                       </div>
                       <p class="creations__text short-text">The grid</p>
@@ -81,6 +97,7 @@
                   <li class="creations__item">
                       <div class="img-container">
                           <img class="creations__img" src="./assets/images/mobile/image-from-above.jpg" alt="Cenital view of a serpent road in Autumn">
+                          <img class="creations__img2" src="./assets/images/desktop/image-from-above.jpg" alt="Cenital view of a serpent road in Autumn">
                           <div class="creations__gradient"></div>
                       </div>
                       <p class="creations__text">From up above vr</p>
@@ -88,6 +105,7 @@
                   <li class="creations__item">
                       <div class="img-container">
                           <img class="creations__img" src="./assets/images/mobile/image-pocket-borealis.jpg" alt="The northern lights in the sky">
+                          <img class="creations__img2" src="./assets/images/desktop/image-pocket-borealis.jpg" alt="The northern lights in the sky">
                           <div class="creations__gradient"></div>
                       </div>
                       <p class="creations__text">Pocket borealis</p>
@@ -95,6 +113,7 @@
                   <li class="creations__item">
                       <div class="img-container">
                           <img class="creations__img" src="./assets/images/mobile/image-curiosity.jpg" alt="A rover in Mars">
+                          <img class="creations__img2" src="./assets/images/desktop/image-curiosity.jpg" alt="A rover in Mars">
                           <div class="creations__gradient"></div>
                       </div>
                       <p class="creations__text">The curiosity</p>
@@ -102,6 +121,7 @@
                   <li class="creations__item">
                       <div class="img-container">
                           <img class="creations__img" src="./assets/images/mobile/image-fisheye.jpg" alt="Fisheye view of a landscape and the sky">
+                          <img class="creations__img2" src="./assets/images/desktop/image-fisheye.jpg" alt="Fisheye view of a landscape and the sky">
                           <div class="creations__gradient"></div>
                       </div>
                       <p class="creations__text">Make it fisheye</p>
