@@ -53,6 +53,11 @@
     }
     &__navlist {
         display: flex;
+        @include tablet {
+            width: 400px;
+            display: flex;
+            justify-content: space-between;
+        }
     }
     &__li {
         margin-top: 20px;

@@ -37,10 +37,34 @@
       display: none;
     }
   }
-  @include desktop {
-    height: 85vh;
+  @include tablet {
+    height: 50vh;
     &__burger {
       display: none;
+    }
+    &__menu {
+      &--list {
+        display: flex;
+        width: 37vw;
+        justify-content: space-between;
+      }
+    }
+    &__topnav {
+      width: 85%;
+    }
+    &__title {
+      width: 15ch;
+      font-size: 3rem;
+      padding: 38px 34px 25px;
+      letter-spacing: 1px;
+    }
+  }
+  @include desktop {
+    height: 85vh;
+    &__menu {
+      &--list {
+        width: 26.4vw;
+      }
     }
     &__logo {
       width: 190px;
@@ -50,29 +74,19 @@
       width: 78%;
     }
     &__title {
-      width: 15ch;
       font-size: 4.7rem;
-      padding: 38px 34px 25px;
       position: absolute;
       left: 158px;
       top: 226px;
-      letter-spacing: 1px;
-    }
-    &__menu {
-      &--list {
-        display: flex;
-        width: 26.4vw;
-        justify-content: space-between;
-      }
     }
   }
 }
 
 .header__menu--item {
-  @include desktop {
-    position: relative;
-    & a {
-      color: $white;
+  & a {
+    color: $white;
+    @include desktop {
+      position: relative;
       &:hover {
         &::after {
           content: '';
